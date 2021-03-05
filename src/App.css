@@ -1,0 +1,154 @@
+*{
+  margin:0;
+}
+
+.app{
+  background-color:#fafafa;
+  height:100%;
+}
+
+.app__posts{
+  padding:20px;
+  display:flex;
+  justify-content:center;
+}
+
+.app__postsRight{
+  margin-left:20px;
+}
+
+.app__header{
+  top:0;
+  z-index:1;
+  background-color:white;
+  padding-left:15px;
+  padding-right:15px;
+  border-bottom: 1px solid lightgray;
+  object-fit:contain; /*keeps aspect ratio*/
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.app__headerImage{
+  object-fit:contain;
+  margin-top:6px;
+}
+
+.app__signup{
+  display:flex;
+  flex-direction:column;
+}
+
+h5{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.addButton{
+  margin-top:6px;
+  transform: scale(1.4);
+  color: #828487;
+  cursor: pointer;
+  
+}
+
+.addButton:hover{
+  color: black;
+}
+
+.hidden {
+  display:none;
+}
+
+button{
+  border:none;
+  background-color:transparent;
+  text-transform: uppercase;
+  font-size:14px;
+}
+ 
+
+@media screen and (min-width:540px) and (max-width: 879px){
+  .app__posts{
+    display:flex;
+    flex-direction:column;
+   align-items:center;
+  }
+
+  .app__header{
+    padding-bottom:8px;
+  }
+  
+  .addButton{
+    margin-top:6px;
+    transform: scale(1.3);
+  }
+}
+
+
+@media screen and (min-width:390px) and (max-width: 540px){
+  .app__posts{
+    display:flex;
+    flex-direction:column;
+    padding-top:15px;
+    align-items:center;
+  }
+
+  .app__header{
+    padding-left:11px;
+    padding-right:11px;
+  }
+
+  .addButton{
+    margin-top:6px;
+    transform: scale(1.2);
+  }
+
+  .app__headerImage{
+    width:90px;
+    height:auto;
+  }
+
+  button{
+    font-size: 12px;
+  }
+
+}
+
+@media screen and (max-width:390px){
+  .app__posts{
+    display:flex;
+    flex-direction:column;
+    padding:0;
+    align-items:center;
+  }
+
+  .app__header{
+    padding-left:8px;
+    padding-right:8px;
+  }
+
+
+  .app__postsRight{
+    margin-left:2px;
+  }
+
+  .addButton{
+    margin-top:4px;
+    transform: scale(0.9);
+  }
+
+  .app__headerImage{
+    width:80px;
+    height:auto;
+  }
+
+  button{
+    font-size: 11px;
+  }
+ 
+}
